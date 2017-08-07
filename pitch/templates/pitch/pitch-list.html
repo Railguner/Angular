@@ -1,0 +1,54 @@
+<div>
+  <alert ng-repeat="alert in alerts " type="{{alert.type}}" close="closeAlert($index)">{{alert.msg}}</alert>
+  <form>
+		<div>
+
+			<div ng-repeat='pitch in pitchs'>
+
+				<a href="#/pitch/pitchDetail/{{pitch.id}}">
+				<span class="listColAllBlockLeft">{{pitch.name}}</span>
+				<span class="listColAllBlockLeft" ng-hide="show">{{pitch.publish}}</span>
+				<span class="listColAllBlockLeft">{{pitch.time}}</span>
+				</div>
+				</a>
+
+		</div>
+
+
+
+
+    </form>
+</div>
+
+
+
+<div  ng-controller="pitchAddModal">
+
+	<div ng-click='open()'>+</div>
+
+  <form name="addform" ng-show="show" novalidate>
+
+	<span>标题</span>
+
+	<div ng-class="{'has-error' : addform.name.$invalid && !addform.name.$pristine}">
+	<input type="text" name="name" ng-model="name" required>
+	<p ng-show="addform.name.$invalid && !addform.name.$pristine">error</p>
+	</div>
+
+	<span>描述</span>
+
+	<div ng-class="{'has-error' : addform.note.$invalid && !addform.note.$pristine}">
+	<textarea type="text" name="note" ng-model="note" required></textarea>
+	<p ng-show="addform.note.$invalid && !addform.note.$pristine">error</p>
+	</div>
+
+
+
+	<button ng-click="cancel()">取消</button>
+
+    <button ng-click="add()" ng-disabled="">完成</button><!-- addform.$invalid || flag -->
+
+
+  </form>
+
+	</div>

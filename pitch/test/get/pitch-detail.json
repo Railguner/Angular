@@ -1,0 +1,36 @@
+{
+	"code": 200,
+	"data": {
+		"detail" : {
+                "id" : 10,
+                "name" : "雕刻盛典",
+				"newtime": "2016.10.20",
+  				"publish" : false,
+  				"note" : "balabala",
+                "Number" : 3
+  			},
+        "activitys" :[
+            {
+                "date" : "2016.10.20",
+                "place": "一饭",
+                "personNum" : "10",
+                "respond" : "阮某",
+                "time" : "14:00"
+            },
+            {
+                "date" : "2016.10.20",
+                "place": "二饭",
+                "personNum" : "10",
+                "respond" : "廖某",
+                "time" : "14:00"
+            },
+            {
+                "date" : "2016.10.20",
+                "place": "三饭",
+                "personNum" : "10",
+                "respond" : "邱某",
+                "time" : "14:00"
+            }
+        ]
+	}
+}

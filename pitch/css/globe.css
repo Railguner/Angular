@@ -1,0 +1,1025 @@
+/*消除默认样式*/
+
+body{
+	margin:0;
+}
+a{
+	text-decoration:none;
+	appearance:none;
+	-webkit-appearance:none;
+	cursor: pointer;
+}
+input{
+	margin:0;
+	padding:0;
+	outline:none;
+	border:0;
+	background:none;
+	appearance:none;
+	-webkit-appearance:none;
+}
+
+input[type="checkbox"],
+input[type="radio"]{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -9px -9px;
+  width: 18px;
+  height: 18px;
+  border: 2px solid black;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background 0.1s ease-out;
+	-webkit-transition: background 0.1s ease-out;
+	-moz-transition: background 0.1s ease-out;
+	-o-transition: background 0.1s ease-out;
+}
+input[type="checkbox"]:checked,
+input[type="radio"]:checked{
+  border: 0;
+  /* background: url(../img/checked.png); */
+}
+textarea{
+}
+button{
+	margin:0;
+	padding:0;
+	outline:none;
+	border:0;
+	backgrond:none;
+}
+hr{
+	border:0;
+	border-top:1px solid;
+	margin:0;
+	padding:0;
+}
+select{
+	border:0;
+	margin:0;
+	padding:0;
+	background:none;
+	outline:none;
+	appearance:none;
+	-webkit-appearance:none;
+}
+select::-ms-expand{
+    display: none;
+}
+ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	box-sizing: initial;
+	-webkit-box-sizing: initial;
+}
+li{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	box-sizing: initial;
+	-webkit-box-sizing: initial;
+}
+p{
+	margin: 0;
+}
+
+/*顶栏*/
+.header{
+	position: fixed;
+	display: block;
+	width: 100%;
+	height: 160px;
+	top: 0 ;
+	z-index: 5;
+}
+.headerContainer{
+	position: relative;
+	display: block;
+	width: 1136px;
+	height: 160px;
+	margin: auto;
+	margin-top: 4px;
+}
+.logo{
+	position: relative;
+	display: block;
+	float: left;
+	width: 144px;
+}
+	/*一级导航*/
+.naviFirst{
+	position: relative;
+	display: block;
+	float: right;
+}
+.naviFirst>li{
+	position: relative;
+	display: block;
+	float: right;
+	width: 72px;
+}
+.naviFirstBtn{
+	position: relative;
+	display: block;
+	width: 64px;
+	margin: auto;
+	padding-top: 8px;
+	padding-bottom: 6px;
+	text-align: center;
+	z-index: 1;
+}
+.naviFirstBtnActive{
+	border-bottom: 2px solid rgba(255,255,255,0.6);
+}
+.naviFirstImg{
+	position: absolute;
+	display: block;
+	top: 15px;
+	right: 20px;
+	cursor: pointer;
+	z-index: 0;
+}
+.naviLocation{
+	position: relative;
+	display: block;
+	float: right;
+	clear: right;
+	margin-top:-84px;
+	margin-right: 20px;
+	z-index: 0;
+}
+	/*更多弹窗*/
+.moreMenu{
+	position: relative;
+	display: block;
+	top: 6px;
+	left: -70px;
+	width: 140px;
+	text-align: center;
+	background-color: white;
+}
+.moreMenuList{
+	position: relative;
+	display: block;
+}
+.moreMenuList li{
+	position: relative;
+	display: block;
+}
+.menuBtn{
+	position: relative;
+	display: block;
+	padding-top: 8px;
+	padding-bottom: 8px;
+}
+.menuBtnLogout{
+	border-top: 1px solid rgba(0,0,0,0.12);
+}
+/*警告弹窗*/
+.alert{
+	position: fixed;
+	display: block;
+	width: 100%;
+	height: 40px;
+	top: 160px;
+	left: 0;
+	z-index: 4;	
+}
+.close{
+	display: none;
+}
+
+/*表单*/
+	/*input*/
+.input{
+	 position: relative;
+	 display: block;
+	 min-height: 96px;
+	 margin-left: 48px;
+}
+.inputLabel{
+	position: relative;
+	display: block;
+}
+.inputValue{
+	position: relative;
+	display: block;
+	margin-top: 12px;
+	padding-left: 7px;
+	padding-bottom: 9px;
+	border-bottom: 2px solid #c2c2c2;
+}
+.inputValue:focus{
+	border-bottom: 2px solid #659c7a;
+}
+.inputError{
+	position: relative;
+	display: block;
+	margin-top: 6px;
+	margin-left: 6px;
+}
+.inputInfo{
+	width: 500px;
+}
+	/*select*/
+.selectValue{
+	position: relative;
+	display: block;
+	width:508px;
+	margin-top: 12px;
+	padding-left: 3px;
+	padding-bottom: 9px;
+	border-bottom: 2px solid #c2c2c2;
+}
+.tableSelcet{
+	margin-left: -4px;
+}
+	/*textarea*/
+.textareaValue{
+	position: relative;
+	display: block;
+	width:536px;
+	margin-top: 12px;
+	padding-left: 5px;
+	padding-bottom: 12px;
+	border: 0;
+	border-bottom: 2px solid #c2c2c2;
+
+}
+	/*checkbox*/
+	/*radio*/
+	/*button*/
+.longBtn{
+	position: relative;
+	display: block;
+	width: 80px;
+	height: 32px;
+}
+.shortBtn{
+	position: relative;
+	display: block;
+	width: 80px;
+	height: 32px;
+}
+.listBtn{
+	margin-top: 48px;
+	margin-left: 476px;
+}
+
+/*表格*/
+.table{
+	position: relative;
+	display: block;
+	width: 624px;
+	margin-left: 16px;
+	z-index: 1;
+}
+.tableList{
+	position: relative;
+	display: block;
+}
+.listColumnHead{
+	position: relative;
+	display: block;
+	width: 624px;
+	min-height: 48px;
+}
+.listColumn{
+	position: relative;
+	display: block;
+	width: 624px;
+	min-height: 48px;
+	border-top: 1px solid rgba(0,0,0,0.12);
+}
+
+.checkbox{
+	position: relative;
+	display: block;
+	float: left;
+	width: 66px;
+	height: 48px;
+}
+.listHead{
+	position: absolute;
+	display: block;
+	float: left;
+	width:558px;
+	height: 48px;
+	left: 66px;
+}
+.listLink{
+	position: absolute;
+	display: block;
+	float: left;
+	width:558px;
+	min-height: 48px;
+	left:66px;
+}
+.listLinkAll{
+	width:612px;
+	left: 0;
+	padding-right: 12px;
+}
+.listColAllBlockLeft{
+	position: relative;
+	display: block;
+	float: left;
+	width: 72px;
+	margin-top: 14px;
+	margin-left: 24px;
+	overflow: hidden;
+}
+.listColAllBlockRight{
+	position: relative;
+	display: block;
+	width: 112px;
+	float: right;
+	margin-top: 14px;
+}
+.listDrop{
+	position: absolute;
+	display: block;
+    top: 21.5px;
+    left: 146px;
+}
+.listDropSec{
+    left: 258px;
+}
+.listColSelect{
+	padding-right: 4px;
+}
+.listColDprtBlockLeft{
+	position: relative;
+	display: block;
+	float: left;
+	width: 104px;
+	margin-top: 14px;
+	margin-left: 24px
+}
+.listColDprtBlockRight{
+	position: relative;
+	display: block;
+	float: right;
+	width: 144px;
+	margin-top: 14px;
+}
+.listColDprtListBlockLeft{
+	position: relative;
+	display: block;
+	float: left;
+	width: 104px;
+	margin-top: 14px;
+	margin-left: 24px
+}
+.listColDprtListBlockRight{
+	position: relative;
+	display: block;
+	float: left;
+	width: 344px;
+	height: 21px;
+	margin-left: 16px;
+	margin-top: 14px;
+	overflow: hidden;
+}
+.listTargetBlockLeft{
+	width: 108px;
+	margin-left: 48px;
+}
+.listTargetBlockRight{
+}
+.pageCtrl{
+	position: relative;
+	display: block;
+	width: 624px;
+	margin-top:32px;
+	margin-left: 16px;
+}
+.pageCtrlBtn{
+	float: right;
+	margin-left: 16px;
+}
+.pageInfo{
+	position: relative;
+	display: block;
+	float: right;
+	margin-top: 6px;
+	margin-right: 24px;
+}
+
+/*视图模板*/
+.container{
+	position: relative;
+	display: block;
+	width:816px;
+	padding-left:160px;
+	padding-right:160px;
+	padding-bottom: 120px;
+	margin: auto;
+	margin-top: 240px;
+	z-index: 0;
+}
+	/*二级导航*/
+.sideBar{
+	position: relative;
+	display: inline;
+	float: left;
+	width: 156px;
+	border-left: 4px solid #659c7a;
+}
+.naviLocationSecondery{
+	position: relative;
+	display: block;
+	margin-top: 4px;
+	margin-left: 16px;
+	margin-bottom: 24px;
+}
+.naviSecondery{
+	position: relative;
+	display: block;
+}
+.naviSecondery li{
+	position: relative;
+	display: block;	
+}
+.naviSeconderyBtn{
+	position: relative;
+	display: block;
+	padding-top: 4px;
+	padding-bottom: 4px;
+	padding-left: 16px;
+	padding-right: 16px;
+}
+
+	/*视图模板*/
+.content{
+	position: relative;
+	display: inline;
+	float: left;
+	width: 656px;
+	padding-bottom: 80px;
+}
+
+/*分页*/
+	/*个人信息*/
+.userInfo{
+	position: relative;
+	display: block;
+}
+.infoHead{
+	position: relative;
+	display: block;
+	margin-left: 264px;
+	overflow: hidden;
+}
+.photo{
+	position: relative;
+	display: block;
+	float: left;
+	width: 64px;
+	height: 64px;
+	background: rgba(0,0,0,0.12);
+	border-radius: 50%
+}
+.title{
+	position: relative;
+	display: block;
+	float: left;
+	margin-left: 16px;
+}
+.name{
+	position: relative;
+	display: block;
+	margin-top: 7px;
+	margin-bottom: 6px;
+}
+.auth{
+	position: relative;
+	display: block;
+}
+.infoBody{
+	position: relative;
+	display: block;
+	margin-top: 64px;	
+	margin-left: 96px;
+	overflow: hidden;
+}
+.infoList{
+	position: relative;
+	display: block;
+	float: left;
+}
+.infoListRight{
+	margin-left: 64px;
+}
+.infoList li{
+	position: relative;
+	display: block;
+	min-height: 20px;
+	margin-bottom: 12px;
+	overflow: hidden;
+}
+.infoLabel{
+	position: relative;
+	display: block;
+	float: left;
+	margin-right: 24px;
+}
+.infoValue{
+	position: relative;
+	display: block;
+	float: left;
+	width: 184px;
+}
+/*全员列表*/
+.panel{
+	position: relative;
+	display: block;
+	width: 624px;
+	height: 54px;
+	margin-left: 16px;
+	z-index: 2
+}
+.listInput{
+	float: left;
+	margin-top: 0;
+	padding-left: 36px;
+	padding-right: 12px;
+}
+.listClearBtn{
+	float: right;
+}
+.searchIcon{
+	position: absolute;
+	display: block;
+	top: 3px;
+	left: 8px;
+}
+/*部门列表*/
+.listDprtBtn{
+	float: left;
+}
+.dprtSelect{
+	width: 192px;
+}
+.optionMenu{
+	position: absolute;
+	display: block;
+	width: 224px;
+	top: -8px;
+	left: 408px;
+}
+.optionMenuBtn{
+	margin-top: 8px;
+	margin-left: 112px;
+}
+.optionMenuColumn{
+	position: relative;
+	display: block;
+	width: 192px;
+	margin: auto;
+	padding-top: 16px;
+	padding-bottom: 8px;
+}
+hr{
+	width: 100%;
+	border: 0;
+	border-top: 1px solid rgba(0,0,0,0.12);
+}
+	/*重置密码*/
+.addReset{
+	float: left;
+	min-height: 248px;
+	margin-left: 48px;
+}
+.tableEdit{
+	width: 304px;
+}
+.addResetRight{
+
+}
+.inputreset{
+	width: 240px;
+	margin-left: 0;
+}
+.ipnutResetBtn{
+	margin-top: 16px;
+	margin-left: 168px;
+}
+	/*增加成员*/
+.selectAdd{
+	width: 248px;
+}
+	/*登陆*/
+.loginHeader{
+	position: relative;
+	display: block;
+	width: 100%;
+	height: 304px;
+	border-bottom: 1px solid rgba(0,0,0,0.12);
+	background: #eeeeee;
+}
+.loginLogo{
+	position: absolute;
+	display: block;
+	width: 272px;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	opacity: 0.87;
+}
+.loginT{
+	position: absolute;
+	display: block;
+}
+#loginLeft{
+	bottom: 0;
+	left: 0;
+	width: 240px;
+}
+#loginRight{
+	bottom: 0;
+	right: 0;
+	width: 224px;
+}
+.loginForm{
+	margin-top: 64px;
+	margin-bottom: 64px;
+}
+.inputLogin{
+	width: 200px;
+	margin: auto;
+	margin-top: 24px;
+	padding-left: 0;
+}
+.loginBtn{
+	position: relative;
+	display: block;
+	width: 208px;
+	margin: auto;
+	margin-top: 40px;
+}
+	/*部门编辑*/
+/*.dprtedit{
+	margin-left: 0;
+}
+.dprteditBtn{
+	margin-left: 428px;
+}*/
+
+/*页脚*/
+footer{
+	position: fixed;
+	display: block;
+	width: 100%;
+	padding-top: 4px;
+	padding-bottom: 4px;
+	bottom: 0;
+}
+
+@media (min-width: 1600px){
+
+.header{
+	height: 192px;
+}
+.headerContainer{
+	width: 1296px;
+}
+.logo{
+	width: 160px;
+}
+.naviFirst li{
+	width: 100%;
+}
+.naviFirstBtn{
+	width: 72px;
+	padding-top: 6px;
+	padding-bottom: 8px;
+}
+.naviFirstImg{
+	top: 14px;
+}
+
+.container{
+	margin-top: 272px;
+}
+.alert{
+	height: 44px;
+	top: 192px;
+}
+.container{
+	width: 976px;
+}
+.sideBar{
+	width: 236px;
+}
+.content{
+	width: 736px;
+}
+.naviSeconderyBtn{
+	padding-top: 6px;
+	padding-bottom: 6px;
+}
+
+/*表单*/
+	/*input*/
+.input{
+	 min-height: 112px;
+	 margin-left: 48px;
+}
+.inputLabel{
+	position: relative;
+	display: block;
+}
+.inputValue{
+	margin-top: 14px;
+	padding-left: 8px;
+	padding-bottom: 12px;
+	border-bottom: 2px solid #c2c2c2;
+}
+.inputValue:focus{
+	border-bottom: 2px solid #659c7a;
+}
+.inputError{
+	position: relative;
+	display: block;
+	margin-top: 10px;
+	margin-left: 8px;
+}
+.inputInfo{
+	width: 528px;
+}
+	/*select*/
+.selectValue{
+	position: relative;
+	display: block;
+	width:536px;
+	margin-top: 14px;
+	padding-left: 5px;
+	padding-bottom: 12px;
+	border-bottom: 2px solid #c2c2c2;
+}
+	/*textarea*/
+
+	/*checkbox*/
+	/*radio*/
+	/*button*/
+.longBtn{
+	position: relative;
+	display: block;
+	width: 96px;
+	height: 40px;
+}
+.shortBtn{
+	position: relative;
+	display: block;
+	width: 96px;
+	height: 40px;
+}
+.listBtn{
+	margin-top: 48px;
+	margin-left: 488px;
+}
+
+
+
+/*分页*/
+	/*个人信息*/
+.infoHead{
+	margin-left: 272px;
+	overflow: hidden;
+}
+.title{
+	position: relative;
+	display: block;
+	float: left;
+	margin-left: 16px;
+}
+.name{
+	position: relative;
+	display: block;
+	margin-top: 5px;
+	margin-bottom: 6px;
+}
+.auth{
+	position: relative;
+	display: block;
+}
+.infoBody{
+	margin-top: 80px;
+	margin-left: 80px;
+}
+.infoListRight{
+	margin-left: 80px;
+}
+.infoList li{
+	min-height: 22px;
+	margin-bottom: 16px;
+	overflow: hidden;
+}
+.infoLabel{
+	margin-right: 32px;
+}
+.infoValue{
+	width: 208px;
+}
+/*全员列表*/
+.panel{
+	width: 720px;
+	height: 64px;
+	margin-left: 0;
+}
+.listInput{
+	float: left;
+	margin-top: 2px;
+	padding-left: 36px;
+	padding-right: 12px;
+}
+.listClearBtn{
+	float: right;
+}
+.searchIcon{
+	top: 6px;
+	left: 8px;
+}
+
+/*表格*/
+.table{
+	width: 720px;
+	margin-left: 0;
+}
+.tableList{
+	position: relative;
+	display: block;
+}
+.listColumnHead{
+	width: 720px;
+	height: 54px;
+}
+.listColumn{
+	width: 720px;
+	min-height: 54px;
+}
+.listDrop{
+	top: 25px;
+    left: 208px;
+}
+.listDropSec{
+    left: 328px;
+}
+.checkbox{
+	width: 74px;
+	height: 54px;
+}
+.listHead{
+	width:646px;
+	height: 54px;
+}
+.listLink{
+	width:646px;
+	min-height: 54px;
+}
+.listLinkAll{
+	width: 704px;
+	padding-right: 16px;
+}
+.listColAllBlockLeft{
+	width: 104px;
+	margin-top: 16px;
+	margin-left: 32px;
+}
+.listColAllBlockRight{
+	width: 120px;
+	margin-top: 16px;
+}
+.listColDprtBlockLeft{
+	width: 104px;
+	margin-top: 16px;
+	margin-left: 24px
+}
+.listColDprtBlockRight{
+	width: 176px;
+	margin-top: 16px;
+}
+.listColDprtListBlockLeft{
+	width: 104px;
+	margin-top: 15px;
+	margin-left: 24px
+}
+.listColDprtListBlockRight{
+	width: 400px;
+	height: 21px;
+	margin-left:24px;
+	margin-top: 15px;
+}
+.listTarget BlockLeft{
+	width: 104px;
+	margin-top: 16px;
+	margin-left: 24px
+}
+.listTarget BlockRight{
+	width: 176px;
+	margin-top: 16px;
+}
+.pageCtrl{
+	width: 720px;
+	margin-top:32px;
+	margin-left: 0;
+}
+.pageCtrlBtn{
+	float: right;
+	margin-left: 16px;
+}
+.pageInfo{
+	position: relative;
+	display: block;
+	float: right;
+	margin-top: 9px;
+}
+
+.dprtSelect{
+	width: 256px;
+}
+.optionMenu{
+	position: absolute;
+	display: block;
+	width: 288px;
+	top: -8px;
+	left: 446px;
+}
+.optionMenuBtn{
+	margin-top: 16px;
+	margin-left: 160px;
+}
+.optionMenuColumn{
+	position: relative;
+	display: block;
+	width: 256px;
+	margin: auto;
+	padding-top: 16px;
+	padding-bottom: 8px;
+}
+
+.addReset{
+	margin-left: 24px;
+}
+.addResetRight{
+	margin-left: 64px;
+}
+.inputreset{
+	margin-left: 0;
+}
+.tableEdit{
+	width: 344px;
+}
+.inputreset{
+	width: 264px;
+}
+.listTargetBlockLeft{
+	width: 116px;
+	margin-left: 44px;
+}
+.ipnutResetBtn{
+	margin-left: 172px;
+}
+
+
+.loginHeader{
+	height: 480px;
+	border-bottom: 1px solid rgba(0,0,0,0.12);
+	background: #eeeeee;
+}
+.loginLogo{
+	width: 440px;
+}
+.loginForm{
+	margin-top: 64px;
+	margin-bottom: 64px;
+}
+#loginLeft{
+	width: 400px;
+	bottom: 0;
+	left: 0;
+}
+#loginRight{
+	bottom: 0;
+	right: 0;
+	width: 368px;
+}
+.inputLogin{
+	width: 128px;
+	margin: auto;
+	margin-top: 24px;
+	padding-left: 64px;
+	padding-right: 64px;
+}
+.loginBtn{
+	width: 264px;
+	margin: auto;
+	margin-top: 48px;
+}
+
+}

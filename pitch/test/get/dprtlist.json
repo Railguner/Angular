@@ -1,0 +1,31 @@
+{
+	"code": 200,
+	"data": {
+    "pageall":8,
+    "pagenow" : 7,
+    "pageeach" : 1,
+    "list" :[
+      {
+        "scnumber" : 201430612034,
+        "name" : "阮某",
+        "position" : "部长",
+        "pitchnumber" : 10,
+        "pitchstatus" : "已审核"
+      },
+      {
+        "scnumber" : 201430612034,
+        "name" : "廖某",
+        "position" : "部长",
+        "pitchnumber" : 10,
+        "pitchstatus" : "已审核"
+      },
+      {
+        "scnumber" : 201430612034,
+        "name" : "邱某",
+        "position" : "部长",
+        "pitchnumber" : 10,
+        "pitchstatus" : "未审核"
+      }
+    ]
+	}
+}

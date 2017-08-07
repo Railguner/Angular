@@ -1,0 +1,22 @@
+{
+  "name": "baitan",
+  "version": "1.0.0",
+  "description": "baitan",
+  "main": "index.html",
+  "dependencies": {
+    "gulp": "^3.9.1"
+  },
+  "devDependencies": {
+    "gulp-babel": "^6.1.2",
+    "gulp-concat": "^2.6.0",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-rename": "^1.2.2",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-uglify": "^1.5.4"
+  },
+  "scripts": {
+    "test": "test"
+  },
+  "author": "lyj",
+  "license": "ISC"
+}

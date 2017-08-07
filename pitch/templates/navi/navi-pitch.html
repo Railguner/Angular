@@ -1,0 +1,29 @@
+<div class="header">
+  <div class="headerContainer">
+   <!--  <img src="img/logo.png" class="logo"> -->
+    <ul class="naviFirst">
+      <li more class="naviHover"><a id="moreBtn" class="naviFirstBtn fontNormal">更多&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a><!-- <img class="naviFirstImg" src="img/pointerDownWhite.png"> --></li>
+      <li class="naviHover"><a class="naviFirstBtn fontNormal naviFirstBtnActive" href="#/pitch">摆摊安排</a></li>
+      <li class="naviHover"><a class="naviFirstBtn fontNormal" href="#/dprt">部门管理</a></li>
+      <li class="naviHover"><a class="naviFirstBtn fontNormal" href="#/user">个人信息</a></li>
+    </ul>
+    <span class="naviLocation fontHuge">摆摊安排</span>
+    <!-- <div id="moreMenu" class="moreMenu" style="display:none;opacity:0;">
+      <ul class="moreMenuList">
+        <li><a class="menuBtn fontNormal">人员系统</a></li>
+        <li><a class="menuBtn fontNormal">成就系统</a></li>
+        <li><a class="menuBtn fontNormal">梯币系统</a></li>
+        <li><a class="menuBtn menuBtnLogout fontNormal" logout-btn ng-disabled="flag">登出</a></li>
+      </ul>
+    </div> -->
+  </div>
+</div>
+<div class="container">
+  <div class="sideBar">
+    <span class="naviLocationSecondery fontSmall">摆摊安排</span>
+    <ul class="naviSecondery">
+      <li class="naviHover"><a class="naviSeconderyBtn fontNormal naviSeconderyBtnActive" href="#/pitch"  onclick='this.innerHTML="返回摆摊列表"'>摆摊列表</a></li>
+    </ul>
+  </div>  
+  <div ui-view class="content"></div>
+</div>

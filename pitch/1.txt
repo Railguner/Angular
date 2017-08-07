@@ -1,0 +1,76 @@
+css布局
+css样式
+
+modal*n
+课表显示
+修改课表
+点击变蓝
+
+templates超链没处理
+个人没课表
+他人没课表--功能
+审核没课表--功能
+修改没课表--功能
+
+
+先对照接口文档改吧
+
+service
+post
+		userSchedule√
+		pitchList	√
+		pitch-detail√
+		pitch-publish√
+		pitchAdd√
+		date
+		dprtList√
+		dprt-schedule
+		activityAdd√
+		activityDetail√
+		activityEdit√
+		logout
+
+get
+		userSchedule√
+		pitchList	√
+		pitchAdd√
+		pitch-detail√
+		pitch-publish√
+		date
+		dprtList√
+		dprt-schedule
+		activityAdd√
+		activityDetail√
+		activityEdit√
+		logout
+
+route
+/   	user    	user/info
+
+		/user		/user/info
+		/pitch		/pitch/pitch-list
+		/dprt		/dprt/dprt-list
+		/activity	/activity/activity-detail
+
+					/dprt-list
+
+
+					/activity/add
+					/activity/detail
+					/activity/edit
+
+
+					/pitch/detail
+					/pitch/list
+
+					/user/info
+					/user/schedule
+
+
+
+url带参数
+dprt.list
+activity.detail
+activity.edit
+pitch.detail
+能传参仍需修改

@@ -1,0 +1,35 @@
+<div>
+  <alert ng-repeat="alert in alerts " type="{{alert.type}}" close="closeAlert($index)">{{alert.msg}}</alert>
+  <form>
+
+		<div>
+			<div>
+				<div>
+					<span class="listColAllBlockLeft">姓名</span>
+					<span class="listColAllBlockLeft">职位</span>
+					<span class="listColAllBlockLeft">摆摊次数</span>
+					<span class="listColAllBlockLeft">课表状态</span>
+				</div>
+				<div>
+					<li ng-repeat='member in members'>
+						<!-- <div  ng-click='scheduleOpen({{member.id}})'> -->
+						<span>{{member.username}}</span>
+						<span>{{member.position}}</span>
+						<span>{{member.pitchNum}}</span>
+						<span>{{member.schedule}}</span>
+						</div>
+					</li>
+				</div>
+			</div>
+
+			<div class="pageCtrl">
+    		<button class="longBtn mainBtn fontNormal pageCtrlBtn" ng-click="pagenext()">下一页</button>
+    		<button class="longBtn mainBtn fontNormal pageCtrlBtn" ng-click="pageprev()">上一页</button>
+    		<span class="pageInfo fontNormal pageInfo">第<span class="fontNormal" ng-model="current"> {{current}} </span>页&nbsp;&nbsp;共<span class="fontNormal" ng-model="total"> {{total}} </span>页</span>
+ 			 </div>
+		</div>
+
+
+
+    </form>
+</div>

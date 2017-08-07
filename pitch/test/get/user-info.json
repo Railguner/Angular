@@ -1,0 +1,16 @@
+{
+  "code": 200,
+  "token": "122efefsadfdsagxvxccvsdfdsdfsd",
+  "info" : "xxxxxxxxxxx",
+  "data": {
+    "name": "LYJ",
+    "photo" : "https://timgsa.baidu.com/timg?image&quality=80&size=b10000_10000&sec=1477989571392&di=a4296ff20e9b014ee167b3b7bc5a8a2f&imgtype=0&src=http%3A%2F%2Fd.hiphotos.baidu.com%2Fzhidao%2Fpic%2Fitem%2F810a19d8bc3eb13518ef02ffa51ea8d3fd1f444d.jpg",
+    "position": "超级管理员",
+    "department": "技术部",
+    "sex": "男",
+    "tel": "15521477952",
+    "shorttel": "695949",
+    "classstatus": "已通过",
+    "pitchnumber": "1"
+  }
+}

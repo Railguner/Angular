@@ -1,0 +1,63 @@
+<div>
+  <alert ng-repeat="alert in alerts " type="{{alert.type}}" close="closeAlert($index)">{{alert.msg}}</alert>
+  <form>
+		<div>
+			<!--<div>
+          <span>{{detail.name}}</span>
+          <a href="#/pitch/edit"><img class="photo" ng-src="" ng-show=""></a>
+          <a href="#/pitch/delete"><img class="photo" ng-src=""></a>
+      </div>-->
+			<div>
+				<div><span>创建时间</span><span>{{detail.newtime}}</span></div>
+
+				<div ng-class="{true: 'black', false: 'gray'}[publish]"><span>发布状态</span><span>{{detail.publish}}</span></div>
+
+				<div><span>摆摊备注</span><span>{{detail.note}}</span></div>
+
+				<div><span>活动数量</span><span>{{detail.Number}}</span></div>
+			</div>
+		</div>
+
+		<div>
+			<button ng-click='download()' ng-hide="!isPublish">导出名单</button>
+      <button ng-click='new()' ng-hide="isPublish">新增活动</button>
+      <button ng-click='publish()' ng-hide="isPublish">发布摆摊</button>
+		</div>
+		<div>
+
+			<div class="table">
+    <ul class="tableList">
+      <li class="listColumnHead">
+        <div class="listHead listLinkAll fontNormal">
+
+          <span class="listColAllBlockLeft">日期</span>
+          <span class="listColAllBlockRight">时段</span>
+          <span class="listColAllBlockRight">地点</span>
+          <span class="listColAllBlockRight">人数</span>
+          <span class="listColAllBlockRight">负责人</span>
+
+        </div>
+      </li>
+      <li class="listColumn" ng-repeat="activity in activitys">
+
+          <span class="listColAllBlockLeft">{{activity.date}}</span>
+<!--
+          <a class="listLink listLinkAll fontNormal" href="#/pitch/activity/edit/{{activity.id}}"><img class="photo" ng-src=""></a>
+
+          <a class="listLink listLinkAll fontNormal" href="#/pitch/activity/delete/{{activity.id}}"><img class="photo" ng-src=""></a>
+-->
+          <span class="listColAllBlockRight">{{activity.time}}</span>
+          <span class="listColAllBlockRight">{{activity.place}}</span>
+          <span class="listColAllBlockRight">{{activity.personNum}}</span>
+          <span class="listColAllBlockRight">{{activity.respond}}</span>
+
+      </li>
+    </ul>
+  </div>
+
+		</div>
+
+
+
+    </form>
+</div>

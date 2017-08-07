@@ -1,0 +1,39 @@
+{
+	"code": 200,
+	"data": {
+		"activity" : {
+          "id" : 1,
+          "name" : "毕业季",
+				  "date": "2016.10.20",
+          "time" : "三四节",
+  				"place" : "一饭",
+  				"personNum" : "10",
+  				"department" : "视频部",
+          "boyFirst" : true,
+          "respond" : "傅某"
+  			},
+    "persons" :[
+        {
+        "username" : "阮某",
+        "position" : "部长",
+        "dprt" : "技术部",
+        "telShort" : "698638",
+        "telLong" : "18826078638"
+        },
+        {
+        "username" : "廖某",
+        "position" : "部长",
+        "dprt" : "技术部",
+        "telShort" : "698638",
+        "telLong" : "18826078638"
+        },
+        {
+        "username" : "邱某",
+        "position" : "部长",
+        "dprt" : "技术部",
+        "telShort" : "698638",
+        "telLong" : "18826078638"
+        }
+      ]
+	}
+}

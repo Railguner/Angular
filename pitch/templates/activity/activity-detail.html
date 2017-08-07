@@ -1,0 +1,36 @@
+<div>
+  <alert ng-repeat="alert in alerts " type="{{alert.type}}" close="closeAlert($index)">{{alert.msg}}</alert>
+  <form>
+  	<div>{{activity.date}}</div>
+  	<div><span>地点</span><span>{{activity.place}}</span></div>
+  	<div><span>人数</span><span>{{activity.personNum}}</span></div>
+  	<div><span>必须部门</span><span>{{activity.department}}</span></div>
+  	<div><span>男生优先</span><span>{{activity.boyFirst}}</span></div>
+  	<div><span>负责人</span><span>{{activity.respond}}</span></div>
+
+  	<div class="table">
+      <ul class="tableList">
+        <li class="listColumnHead">
+          <div class="listHead fontNormal">
+
+            <span class="listColDprtListBlockLeft">姓名</span>
+            <span class="listColDprtListBlockLeft">职位</span>
+            <span class="listColDprtListBlockLeft">部门</span>
+            <span class="listColDprtListBlockLeft">手机短号</span>
+            <span class="listColDprtListBlockLeft">手机长号</span>
+          </div>
+        </li>
+        <li class="listColumn" ng-repeat="person in persons">
+        <a class="listLink listLinkAll fontNormal" href="#/user/info/{{person.id}}">
+          <span class="listColAllBlockLeft">{{person.username}}</span>
+          <span class="listColAllBlockLeft">{{person.position}}</span>
+          <span class="listColAllBlockLeft">{{person.dprt}}</span>
+          <span class="listColAllBlockLeft">{{person.telShort}}</span>
+          <span class="listColAllBlockLeft">{{person.telLong}}</span>
+        </a>
+      </li>
+      </ul>
+    </div>
+
+    </form>
+</div>

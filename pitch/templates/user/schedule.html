@@ -1,0 +1,91 @@
+<div>
+  <alert ng-repeat="alert in alerts " type="{{alert.type}}" close="closeAlert($index)">{{alert.msg}}</alert>
+	<form name="scheduleForm" novalidate>
+
+
+          			<span class="listColAllBlockLeft">周一</span>
+          			<span class="listColAllBlockLeft">周二</span>
+          			<span class="listColAllBlockLeft">周三</span>
+          			<span class="listColAllBlockLeft">周四</span>
+          			<span class="listColAllBlockLeft">周五</span>
+          			<span class="listColAllBlockLeft">周六</span>
+          			<span class="listColAllBlockLeft">周日</span>
+
+
+<div>
+    <div id="Monday">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <div id="Tuesday">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <div id="Wednesday">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <div id="Thursday">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <div id="Friday">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <div id="Saturday">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <div id="Sunday">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</div>
+
+
+    <li>
+        <span>*点击后方块变为蓝色，代表该时间没课</span>
+        <span>课表状态</span><span>{{classstatus}}</span>
+    </li>
+
+    	<button ng-click="reset()">还原</button>
+      	<button type="submit" ng-disabled="scheduleForm.$invalid || flag" ng-click="edit()">完成</button>
+
+    </form>
+</div>

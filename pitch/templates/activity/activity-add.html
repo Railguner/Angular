@@ -1,0 +1,62 @@
+<div>
+  <alert ng-repeat="alert in alerts " type="{{alert.type}}" close="closeAlert($index)">{{alert.msg}}</alert>
+
+  <form  name="addform" novalidate>
+
+    <div ng-class="{'has-error' : addform.name.$invalid && !addform.name.$pristine}">
+      新增活动<input type="text" name="name" ng-model="name" required>
+      <p ng-show="addform.name.$invalid && !addform.name.$pristine">error</p>
+    </div>
+
+    <div ng-class="{'has-error' : addform.date.$invalid && !addform.date.$pristine}">
+      日期<textarea type="text" name="date" ng-model="date"  placeholder="选择日期，点击展开日历" required></textarea>
+      <p ng-show="addform.date.$invalid && !addform.date.$pristine">error</p>
+    </div>
+
+    <div ng-class="{'has-error' : addform.time.$invalid && !addform.time.$pristine}">
+    课时<textarea type="text" name="time" ng-model="time"  placeholder="选择一个时段" required></textarea>
+      <p ng-show="addform.time.$invalid && !addform.time.$pristine">error</p>
+    </div>
+
+    <div ng-class="{'has-error' : addform.place.$invalid && !addform.place.$pristine}">
+    地点<textarea type="text" name="place" ng-model="place" placeholder="输入此活动地点，例：一饭，C13" required></textarea>
+      <p ng-show="addform.place.$invalid && !addform.place.$pristine">error</p>
+    </div>
+
+    <div ng-class="{'has-error' : addform.person.$invalid && !addform.person.$pristine}">
+    人数<textarea type="number" name="person" ng-model="person" placeholder="输入分配的人数" required></textarea>
+      <p ng-show="addform.person.$invalid && !addform.person.$pristine">error</p>
+    </div>
+
+    <div ng-class="{'has-error' : addform.respondNum.$invalid && !addform.respondNum.$pristine}">
+    负责人<textarea type="text" name="respondNum" ng-model="respondNum" placeholder="输入负责人学号" required></textarea>
+      <p ng-show="addform.respondNum.$invalid && !addform.respondNum.$pristine">error</p>
+    </div>
+
+    <div ng-class="{'has-error' : addform.dprt.$invalid && !addform.dprt.$pristine}">
+    必须部门
+    <div ng-repeat="department in dprt">
+      <span>{{department.name}}</span>
+      <input type="checkbox" name="indispensable" ng-model="{{department.name}}" value="{{department.name}}"/>
+    </div>
+
+
+      <p ng-show="addform.dprt.$invalid && !addform.dprt.$pristine">error</p>
+    </div>
+
+    <div ng-class="{'has-error' : addform.boyFirst.$invalid && !addform.boyFirst.$pristine}">
+    男生优先
+    <span>此次活动优先分配男生</span>
+    <input type="checkbox" name="boyFirst" ng-model="boyFirst" />
+      <p ng-show="addform.boyFirst.$invalid && !addform.boyFirst.$pristine">error</p>
+    </div>
+
+
+	<button ng-click="clear()">清空</button>
+
+      <button  ng-click="add()" >完成</button> <!-- ng-disabled="addform.$invalid || flag" -->
+  </form>
+
+
+
+</div>

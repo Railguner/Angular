@@ -1,0 +1,79 @@
+<div>
+  <alert ng-repeat="alert in alerts " type="{{alert.type}}" close="closeAlert($index)">{{alert.msg}}</alert>
+
+
+
+  <form name="editform" novalidate>
+
+    <div class="input inputInfo dprtedit" ng-class="{'has-error' : editform.name.$invalid && !editform.name.$pristine}">
+      <span class="inputLabel fontSmall">编辑活动</span>
+      <input class="inputValue fontLarge inputInfo" type="text" name="name" ng-model="name" required>
+      <p class="inputError fontMin" ng-show="editform.name.$invalid && !editform.name.$pristine">error</p>
+    </div>
+
+    <div class="input inputInfo dprtedit">
+      <span class="inputLabel fontSmall">日期</span>
+      <input class="inputValue fontLarge inputInfo" type="text" name="time" ng-model="date"  required>
+      <p class="inputError fontMin" ng-show="editform.date.$invalid && !editform.date.$pristine">error</p>
+
+
+    </div>
+
+    <div class="input inputInfo dprtedit">
+      <span class="inputLabel fontSmall">课时</span>
+      <select class="selectValue fontLarge inputreset selectAdd" name="time" ng-model="time"  required>
+          <option value="一二节">一二节</option>
+          <option value="三四节">三四节</option>
+          <option value="五六节">五六节</option>
+          <option value="七八节">七八节</option>
+          <option value="晚课">晚课</option>
+      </select>
+      <p class="inputError fontMin" ng-show="editform.time.$invalid && !editform.time.$pristine">error</p>
+    </div>
+
+    <div class="input inputInfo dprtedit">
+      <span class="inputLabel fontSmall">地点</span>
+      <input class="inputValue fontLarge inputInfo" type="text" name="place" ng-model="place"  required>
+      <p class="inputError fontMin" ng-show="editform.place.$invalid && !editform.place.$pristine">error</p>
+    </div>
+
+    <div class="input inputInfo dprtedit">
+      <span class="inputLabel fontSmall">人数</span>
+      <input class="inputValue fontLarge inputInfo" type="text" name="personNum" ng-model="personNum"  required>
+      <p class="inputError fontMin" ng-show="editform.personNum.$invalid && !editform.personNum.$pristine">error</p>
+    </div>
+
+    <div class="input inputInfo dprtedit">
+      <span class="inputLabel fontSmall">负责人</span>
+      <input class="inputValue fontLarge inputInfo" type="text" name="respond" ng-model="respond"  required>
+      <p class="inputError fontMin" ng-show="editform.respond.$invalid && !editform.respond.$pristine">error</p>
+    </div>
+
+    <div class="input inputInfo dprtedit">
+      <span class="inputLabel fontSmall">必须部门</span>
+      <div ng-repeat="department in dprt">
+      <span>{{department.name}}</span>
+      <input type="checkbox" name="department" ng-model="department" />
+    </div>
+      <p class="inputError fontMin" ng-show="editform.department.$invalid && !editform.department.$pristine">error</p>
+    </div>
+
+    <div class="input inputInfo dprtedit">
+      <span class="inputLabel fontSmall">男生优先</span>
+      <input type="checkbox" name="boyFirst" ng-model="boyFirst">
+      <p class="inputError fontMin" ng-show="editform.boyFirst.$invalid && !editform.boyFirst.$pristine">error</p>
+    </div>
+
+
+
+
+
+	<button ng-click="reset()">还原</button>
+
+
+
+      <button class="mainBtn shortBtn listBtn fontNormal dprteditBtn"    ng-click="edit()" >修改</button><!-- ng-disabled="editform.$invalid || flag" -->
+  </form>
+
+
+</div>
